@@ -1,0 +1,15 @@
+<div class="nz-input-layout">
+  <div class="nz-input-outer-container">
+    <ng-template #icon>
+      <div class="nz-input-inner-icon nz-ui-hd">
+        <img [src]="iconUrl" alt="">
+      </div>
+    </ng-template>
+    <div class="nz-input-inner-label nz-ui-hd" *ngIf="text; else icon">
+      <span>{{title}}</span>
+    </div>
+    <div class="nz-input-inner-container">
+      <input type="text" class="nz-input" [placeholder]="placeholder">
+    </div>
+  </div>
+</div>
