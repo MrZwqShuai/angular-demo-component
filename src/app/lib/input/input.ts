@@ -23,7 +23,7 @@ import {
 })
 
 export class NzInput {
-  text: boolean = true;
+  text: boolean = false;
   icon: boolean = true;
   currentValue: any = "dsdasd";
 

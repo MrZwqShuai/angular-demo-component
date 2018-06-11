@@ -2,7 +2,7 @@
   <div class="nz-input-outer-container">
     <ng-template #icon>
       <div class="nz-input-inner-icon nz-ui-hd">
-        <img [src]="iconUrl" alt="">
+        <ng-content></ng-content>
       </div>
     </ng-template>
     <div class="nz-input-inner-label nz-ui-hd" *ngIf="text; else icon">
